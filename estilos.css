@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+margin: 0;
+padding: 0;
+display: flex;
+}
+header {
+    width: 20vw;
+    background-color: #d1d0ce;
+    padding: 20px;
+    text-align: center;
+    order: 1;
+    height: 100vh;
+    position: fixed;
+}
+header img {
+    width: 90%;
+    height: auto;
+}
+nav {
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 30px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+nav ul li a:hover {
+    color: #a75ced;
+}
+.botonContacto {
+    background-color: #fc8cba;
+    color: #fffffd;
+    border-radius: 25px;
+    padding: 5% 10%;
+}
+.botonContacto:hover {
+    background-color: #5b5a56;
+    color: #fffffd;
+}
+main {
+    width: 80vw;
+    margin-right: 0;
+    margin-left: 20vw;
+    flex: 1;
+    background-color: #fffffd;
+    padding: 0;
+    order: 2;
+}
+#inicio {
+    height: 100vh;
+}
+#inicio img {
+    width: 100%;
+}
+.descripcion {
+    padding: 0 5%;
+}
+#sobreMi {
+    background-color: #5b5a56;
+    color: #fffffd;
+}
+.sobreMi {
+    padding: 2% 5%;
+}
+#formacion {
+    background-color: #fe91bb;
+    color: #fffffd;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 25px;
+}
+#formacion h2, #proyectos h2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.formacion {
+    width: 90%;
+    margin: 1% auto;
+    border: 1px solid #ccc;
+    border-radius: 0 25px 25px 25px;
+    background-color: #b76abc;
+    margin-top: 50px;
+}
+
+.pestañas {
+    background-color: #f0f0f0;
+    display: flex;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.pestaña {
+    padding: 10px 20px;
+    margin-top: -30px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background-color: #b76abc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pestaña.activa {
+    color: #fffffd;
+}
+
+.contenidos {
+    padding: 20px;
+}
+
+.contenido {
+    display: none;
+}
+
+.contenido.activo {
+    display: block;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    gap: 20px;
+}
+.galeria img, .galeria video {
+    width: 100%;
+    height: 20vh;
+}
+.galeria a {
+    color: #fffffd;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+span {
+    font-size: 12px;
+}
+#formacion img:hover {
+    transform: scale(170%);
+}
+
+
+#proyectos {
+    background-color: #735bf7;
+    color: #fffffd;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 25px;
+}
+.proyectos {
+    width: 90%;
+    margin: 1% auto;
+    border: 1px solid #ccc;
+    border-radius: 0 25px 25px 25px;
+    background-color: #a75ced;
+    margin-top: 50px;
+}
+.pestañasProy {
+    background-color: #f0f0f0;
+    display: flex;
+    gap: 5px;
+    background-color: transparent;
+}
+
+.pestañaProy {
+    padding: 10px 20px;
+    margin-top: -30px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background-color: #a75ced;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pestañaProy.proyActiva {
+    color: #fffffd;
+}
+
+.contenidosProy {
+    padding: 20px;
+}
+
+.contenidoProy {
+    display: none;
+}
+
+.contenidoProy.proyActivo {
+    display: block;
+}
+.oculto {
+    display: none;
+}
+#proyectos video {
+    transform: scale(200%) translateY(-25%);
+}
+#proyectos .visible {
+    display: block;
+}
+
+#contacto {
+    background-color: #9f9b9a;
+    padding: 1%;
+    height: 100vh;
+}
+form {
+    background-color: #d1d0ce;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 65%;
+    height: 90%;
+    padding: 5%;
+    margin: 1% auto;
+    border-radius: 25px;
+}
+input, textarea {
+    background-color: #fc8cba;
+    border: 2px solid #a75ced;
+    border-radius: 5px;
+    color: #5b5a56;
+    
+}
+input:hover, textarea:hover {
+    background-color: #9f9b9a;
+    border: 2px solid #5b5a56;
+    color: #fffffd;
+
+}
+input:focus, textarea:focus {
+    border: 2px solid #fc8cba;
+    outline: none;
+}
+label, input, textarea {
+    width: 80%;
+    padding: 1%;
+    margin: 0 auto;
+}
+form button {
+    width: 20%;
+    margin: 10px auto;
+    padding: 1%;
+    background-color: #fc8cba;
+    border: none;
+    border-radius: 5px;
+}
+form button:hover {
+    background-color: #5b5a56;
+    color: #fffffd;
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    * {
+        font-size: 18px;
+    }
+    header {
+        display: none;
+    }
+    main {
+        width: 100vw;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .galeria {
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .galeria img, .galeria video {
+        width: 90%;
+    }
+    form {
+
+        gap: 15px;
+        width: 80%;
+        height: auto;
+        padding: 10% 5%;
+    }
+    form button {
+        width: 50%;
+    }
+}
